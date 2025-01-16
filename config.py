@@ -25,12 +25,12 @@ load_dotenv()
 
 class Config:
     def __init__(self) -> None:
-        self.API_ID: str = os.environ.get("API_ID", None)
-        self.API_HASH: str = os.environ.get("API_HASH", None)
-        self.SESSION: str = os.environ.get("SESSION", None)
-        self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", None)
+        self.API_ID: str = os.environ.get("API_ID", 28372387)
+        self.API_HASH: str = os.environ.get("API_HASH", 11edc85521fb2d8f75e751bb284507e1)
+        self.SESSION: str = os.environ.get("SESSION", BQGw7aMAmIJc10VKJtKHP_A4ACgoeV2dGiho_4_cD8K254m8tlfCCm4D56wW8x4SESqdPQFMzSzkiTh98RrqoI4Z2JkKC450WjyGuqZ8jUvqOwsiwrwvjQJNDJjzk88Qilx06xS6pVmh4hnszKHzmQDnd59tuG9dIO9J_ftcYrG9fWnRht9qtOS1g5Al5KZ_LJOTFnDqdHx_s4zp8tKNxaWwKZGAZUdPBv7TiMhhVIWdsWkqHxRtigAY5XK-KaiK-37MurTw4HRyzZ8HcH2qlIjmf0vHrRQn-PX-VKf5uyQDzIJg8nBMeUOujVHgZmMKOAjx5yjt1jca6WukfBP589kiMcCL2AAAAAFg8RCoAA)
+        self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", 7100168038:AAFsblGEFhadkanoAPyB0zv4h-oIkOnMY9c)
         self.SUDOERS: list = [
-            int(id) for id in os.environ.get("SUDOERS", " ").split() if id.isnumeric()
+            int(id) for id in os.environ.get("SUDOERS", "5921378472").split() if id.isnumeric()
         ]
         if not self.SESSION or not self.API_ID or not self.API_HASH:
             print("ERROR: SESSION, API_ID and API_HASH is required!")
@@ -45,7 +45,7 @@ class Config:
             else "video"
         )
         self.ADMINS_ONLY: bool = os.environ.get("ADMINS_ONLY", False)
-        self.SPOTIFY_CLIENT_ID: str = os.environ.get("SPOTIFY_CLIENT_ID", None)
+        self.SPOTIFY_CLIENT_ID: str = os.environ.get("SPOTIFY_CLIENT_ID", 7876548217)
         self.SPOTIFY_CLIENT_SECRET: str = os.environ.get("SPOTIFY_CLIENT_SECRET", None)
 
 
